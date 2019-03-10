@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>casa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content padding>
+      <ion-button (click) = "myposition()"  ></ion-button>
+
+      <ion-card>
+          <ion-card-content>
+          <img [src]="base64Image" *ngIf="base64Image" />
+          </ion-card-content>
+          
+          <ion-input type="tel"  [(ngModel)]="myNumero"  *ngIf="myflagfone"  placeholder="entre no telefone"></ion-input>
+          <ion-input type="string" [(ngModel)]="nome"   placeholder="entre no nome"></ion-input>
+          <ion-input type="string" [(ngModel)]="sobrenome"   placeholder="entre seu sobrenome"></ion-input>
+          <ion-input type="number" [(ngModel)]="cpf"  maxlength= "11" minlength= "11"   placeholder="entre seu CPF"></ion-input>
+        </ion-card>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="primary">
+      <ion-button fill="clear" expand="full" color="light" (click)="myCamera()">
+        <ion-icon slot="start" name="camera"></ion-icon>
+        Select Image</ion-button>
+<br>
+        <ion-button fill="clear" expand="full" color="light" (click)="send()">
+        enviar emergência</ion-button>
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+   
+  <ion-card color="light" class="welcome-card">
+      <ion-img src="/assets/bomberos.jpg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Get Started</ion-card-subtitle>
+        <ion-card-title>Demo Bomberos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-list class="myBackground">
+      <ion-list-header>
+      </ion-list-header>
+
+      <p>
+      </p>
+      <ion-item color = "primary " class="myButton"   [routerLink]="['/','incendio']" > 
+        <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+        <ion-label class="myButton">Incêndio</ion-label>
+      </ion-item>
+      <p>
+      </p>
+
+      <p>
+      </p>
+      <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
+        <span   slot="start" >🔥</span>
+        <ion-label class="myButton">Acidente</ion-label>
+      </ion-item>
+      <p>
+      </p>
+
+      <p>
+      </p>
+      <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
+        <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+        <ion-label class="myButton">Situação de Risco 
+        </ion-label>
+      </ion-item>
+      <p>
+      </p>
+
+
+
+    </ion-list>
+</ion-content>

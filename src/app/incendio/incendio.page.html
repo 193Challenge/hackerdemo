@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Incendio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content   class="myBackground"> 
+
+
+    <ion-list class="myBackground">
+
+
+        <ion-card color="light" class="welcome-card">
+            <ion-img src="/assets/incendio.jpg"></ion-img>
+            <ion-card-header>
+              <ion-card-title>Incendio</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Selecione a opção mais próxima de sua emergência </p>
+            </ion-card-content>
+          </ion-card>
+
+
+        <ion-list-header>
+        </ion-list-header>
+  
+        <p>
+        </p>
+        <ion-item color = "primary " class="myButton"   [routerLink]="['/','casa']" > 
+          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+          <ion-label class="myButton">Casa</ion-label>
+        </ion-item>
+        <p>
+        </p>
+  
+        <p>
+        </p>
+        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
+          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+          <ion-label class="myButton">Apartamento</ion-label>
+        </ion-item>
+        <p>
+        </p>
+  
+        <p>
+        </p>
+        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
+          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+          <ion-label class="myButton">Predio Comercial 
+          </ion-label>
+        </ion-item>
+        <p>
+          </p>
+
+        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
+          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+          <ion-label class="myButton">Industrial 
+          </ion-label>
+        </ion-item>
+
+
+        <p>
+        </p>
+  
+  
+  
+      </ion-list>
+
+</ion-content>
