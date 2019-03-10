@@ -17,7 +17,9 @@ const routes: Routes = [
   },
   { path: 'salvamento', loadChildren: './salvamento/salvamento.module#SalvamentoPageModule' },
   { path: 'incendio', loadChildren: './incendio/incendio.module#IncendioPageModule' },
-  { path: 'casa', loadChildren: './casa/casa.module#CasaPageModule' }
+  { path: 'casa/:id', loadChildren: './casa/casa.module#CasaPageModule' },
+  { path: 'acidentes', loadChildren: './acidentes/acidentes.module#AcidentesPageModule' },
+  { path: 'risco', loadChildren: './risco/risco.module#RiscoPageModule' }
 ];
 
 @NgModule({

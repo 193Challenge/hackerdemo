@@ -4,66 +4,46 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content   class="myBackground"> 
 
-
-    <ion-list class="myBackground">
-
-
-        <ion-card color="light" class="welcome-card">
-            <ion-img src="/assets/incendio.jpg"></ion-img>
-            <ion-card-header>
-              <ion-card-title>Incendio</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <p>Selecione a opção mais próxima de sua emergência </p>
-            </ion-card-content>
-          </ion-card>
-
-
+<ion-content >
+   
+    <ion-card  class="welcome-card">
+      <!--
+        <ion-card-header>
+        </ion-card-header>
+      -->
+        <ion-card-title class="myTexto">
+          <p>Esta é uma aplicacao séria <br> seu uso impacta na vida das pessoas<br> use com consciencia</p>
+        </ion-card-title>
+      </ion-card>
+  
+  
+      <ion-list >
         <ion-list-header>
         </ion-list-header>
   
         <p>
         </p>
-        <ion-item color = "primary " class="myButton"   [routerLink]="['/','casa']" > 
-          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
-          <ion-label class="myButton">Casa</ion-label>
-        </ion-item>
+        
+          <ion-img src="/assets/casa.png"  [routerLink]="['/','casa','casa']" ></ion-img>
+       
         <p>
         </p>
   
         <p>
         </p>
-        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
-          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
-          <ion-label class="myButton">Apartamento</ion-label>
-        </ion-item>
+        <ion-img src="/assets/Apartamento.png" [routerLink]="['/','casa','apartamento']"></ion-img>
         <p>
         </p>
+        <ion-img src="/assets/predio_comercial.png" [routerLink]="['/','casa','predioComercial']"></ion-img>
   
-        <p>
-        </p>
-        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
-          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
-          <ion-label class="myButton">Predio Comercial 
-          </ion-label>
-        </ion-item>
         <p>
           </p>
-
-        <ion-item color = "primary " class="myButton"   [routerLink]="['/','salvamento']" > 
-          <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
-          <ion-label class="myButton">Industrial 
-          </ion-label>
-        </ion-item>
-
-
-        <p>
-        </p>
+          <ion-img src="/assets/predio_industrial.png" [routerLink]="['/','casa','predioIndustrial']"></ion-img>
+    
+      
   
   
   
       </ion-list>
-
-</ion-content>
+  </ion-content>

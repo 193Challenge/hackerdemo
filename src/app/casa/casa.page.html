@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>casa</ion-title>
+    <ion-title>{{tipo}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,8 +11,7 @@
       <ion-card>
           <ion-card-content>
           <img [src]="base64Image" *ngIf="base64Image" />
-          </ion-card-content>
-          
+          </ion-card-content>      
           <ion-input type="tel"  [(ngModel)]="myNumero"  *ngIf="myflagfone"  placeholder="entre no telefone"></ion-input>
           <ion-input type="string" [(ngModel)]="nome"   placeholder="entre no nome"></ion-input>
           <ion-input type="string" [(ngModel)]="sobrenome"   placeholder="entre seu sobrenome"></ion-input>

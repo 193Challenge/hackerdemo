@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Acidentes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content   class="myBackground"> 
+  
+  
+  <ion-list class="myBackground">
+
+<ion-card color="light" class="welcome-card">
+    <ion-img src="/assets/incendio.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Incendio</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Selecione a opção mais próxima de sua emergência </p>
+    </ion-card-content>
+</ion-card>
+
+
+
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','carro']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Carro</ion-label>
+</ion-item>
+<p>
+</p>
+
+<p>
+</p>
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','accidenteDomestico']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">AccidenteDomestico</ion-label>
+</ion-item>
+<p>
+</p>
+
+
+
+
+</ion-list>
+
+</ion-content>
+

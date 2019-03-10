@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Situacao de Risco</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content   class="myBackground"> 
+  
+  
+  <ion-list class="myBackground">
+
+<ion-card color="light" class="welcome-card">
+    <ion-img src="/assets/incendio.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Incendio</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Selecione a opção mais próxima de sua emergência </p>
+    </ion-card-content>
+</ion-card>
+
+
+
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','enchente']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Enchente</ion-label>
+</ion-item>
+<p>
+</p>
+
+<p>
+</p>
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','presoLocaisFechados']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Preso em Locais Fechados</ion-label>
+</ion-item>
+<p>
+</p>
+
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','quedaArvore']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Preso em locais fechados </ion-label>
+</ion-item>
+<p>
+</p>
+
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','altura']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Altura </ion-label>
+</ion-item>
+<p>
+</p>
+
+<ion-item color = "primary " class="myButton"   [routerLink]="['/','casa','demoronamento']" > 
+  <ion-icon color = "success"  slot="start" name="medical"></ion-icon>
+  <ion-label class="myButton">Desmoramento </ion-label>
+</ion-item>
+<p>
+</p>
+
+
+</ion-list>
+
+</ion-content>
+

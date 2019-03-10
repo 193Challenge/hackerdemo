@@ -11,8 +11,9 @@ import { HttpClient } from '@angular/common/http';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { Storage } from '@ionic/storage';
 import { FilePath } from '@ionic-native/file-path/ngx';
- import { Sim } from '@ionic-native/sim/ngx';
+import { Sim } from '@ionic-native/sim/ngx';
 
+import { ActivatedRoute, Router } from '@angular/router';
 
 const STORAGE_KEY = 'my_images';
 
@@ -31,6 +32,7 @@ export class CasaPage implements OnInit {
    sobrenome: any;
    cpf: any;
    myflagfone = false;
+   tipo: any;
 
    options: CameraOptions = {
     quality: 100,
@@ -54,13 +56,17 @@ export class CasaPage implements OnInit {
               private plt: Platform,
               private loadingController: LoadingController,
               private sim: Sim,
-              private service: ApiService              ) {}
+              private service: ApiService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router,
+              ) {}
 
 
 
   ngOnInit() {
+     this.tipo = this.activatedRoute.snapshot.paramMap.get('id');
 
-
+    console.log('casa');
     this.sim.getSimInfo().then(
       (info) => {
         this.myNumero = info.phoneNumber;
@@ -134,7 +140,7 @@ export class CasaPage implements OnInit {
 
   async send() {
     const nomes = this.nome + ' ' + this.sobrenome; 
-   this.service.emergenciaCreate( this.position1, this.position2,this.myNumero, nomes, this.cpf, 'casa', this.base64Image )
+   this.service.emergenciaCreate( this.position1, this.position2,this.myNumero, nomes, this.cpf, this.tipo, this.base64Image );
 
   }
 
