@@ -1,18 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>{{tipo}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="titulo">
+        CORPO <br>DE BOMBEIROS
+      </ion-title>
+      <ion-img src="/assets/logo.jpg" slot="end" ></ion-img>
+    </ion-toolbar>
+  </ion-header>
 
 
   <ion-content padding>
-      <ion-button (click) = "myposition()"  ></ion-button>
+
+      <ion-card  class="welcome-card">
+
+            <ion-card-title class="myTexto">
+              <p>Esta é uma aplicacao séria <br> seu uso impacta na vida das pessoas<br> use com consciencia</p>
+            </ion-card-title>
+          </ion-card>
 
       <ion-card>
           <ion-card-content>
           <img [src]="base64Image" *ngIf="base64Image" />
           </ion-card-content>      
-          <ion-input type="tel"  [(ngModel)]="myNumero"  *ngIf="myflagfone"  placeholder="entre no telefone"></ion-input>
+          <ion-input type="tel"  [(ngModel)]="myNumero"  *ngIf="myflagfone"  placeholder="DDD + TELEFONE"></ion-input>
           <ion-input type="string" [(ngModel)]="nome"   placeholder="entre no nome"></ion-input>
           <ion-input type="string" [(ngModel)]="sobrenome"   placeholder="entre seu sobrenome"></ion-input>
           <ion-input type="number" [(ngModel)]="cpf"  maxlength= "11" minlength= "11"   placeholder="entre seu CPF"></ion-input>
